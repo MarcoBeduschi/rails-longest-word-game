@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="game-screen text-center">
+    <!-- title -->
+    <h2>Longest word-game!</h2>
+    <p>Here is your grid:</p>
+
+    <!-- display grid -->
+    <h3 class="grid well text-center"><%= @grid %></h3>
+
+    <form action="/score">
+      <input class="well" type="text" id="question" name="attempt" placeholder="Your attempt">
+      <input class="hidden" type="text" name="grid" value="<%= @grid %>">
+      <input class="hidden" type="text" name="start_time" value="<%= @start_time %>">
+      <button type="submit" class="btn btn-primary">Check answer</button>
+    </form>
+  </div>
+</div>
+
+
+

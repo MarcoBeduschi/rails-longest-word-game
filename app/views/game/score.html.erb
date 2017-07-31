@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="game-screen text-center">
+    <h2>Longest word-game!</h2>
+    <p>Your answer</p>
+    <h3 class="grid well text-center"><%= @attempt %></h3>
+
+    <p>Time taken</p>
+    <h3 class="grid well text-center"><%= @outcome[:time] %> seconds</h3>
+
+    <p>Your score</p>
+    <h3 class="grid well text-center"><%= @outcome[:score] %></h3>
+
+    <div class="alert alert-<%= @end_message %>"" role="alert"><h3><%= @outcome[:message] %></h3></div>
+  </div>
+</div>
